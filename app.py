@@ -5,7 +5,7 @@ if st.button("Check this"):
   #time_series = np.random.randn(150)
   n = 150    #No. of time steps
   x = np.arange(n)    #time steps
-  y = cumsum(np.random.randn(n))    #Random walk - cumulative sum of normal distribution
+  y = np.cumsum(np.random.randn(n))    #Random walk - cumulative sum of normal distribution
   coefficients = np.polyfit(x, y, 1)
   trendline = np.poly1d(coefficients)
   plt.plot(x,y)
