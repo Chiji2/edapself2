@@ -7,4 +7,4 @@ if st.button("Check this"):
   plt.title("Random 150-unit Time Series")
   plt.xlabel("Time")
   plt.ylabel("Values")
-  plt.pyplot(plt.gcf())
+  st.pyplot(plt.gcf())
