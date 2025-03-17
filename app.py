@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
 if st.button("Check this"):
-    n = 150    #No. of time steps
+  n = 150    #No. of time steps
   x = np.arange(n)    #time steps
   y = np.cumsum(np.random.randn(n))    #Random walk - cumulative sum of normal distribution
   coefficients = np.polyfit(x, y, 1)
