@@ -7,6 +7,6 @@ if st.button("Check this"):
   plt.title("Random 150-unit Time Series")
   plt.xlabel("Time")
   plt.ylabel("Values")
-  coefficients = np.polyfit("Time" "Values",1)
+  coefficients = np.polyfit("Time", "Values",1)
   trendline = np.poly1d(coefficients)
   st.pyplot(plt.gcf())
