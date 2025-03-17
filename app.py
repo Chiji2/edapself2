@@ -7,9 +7,9 @@ if st.button("Check this"):
   x = np.arange(n)    #time steps
   y = np.cumsum(np.random.randn(n))    #Random walk - cumulative sum of normal distribution
   coefficients = np.polyfit(x, y, 1)
-  trendline = np.poly1d(coefficients)
+  trend_line = np.poly1d(coefficients)
   plt.plot(x,y)
-  plt.plot(x,trend_line(x), label="Trend Line", color="red", linewidth=2)
+  plt.plot(x,trend_line(x))
   plt.xlabel("Time steps")
   plt.ylabel("Values")
   plt.title("Random walk with trend line")
