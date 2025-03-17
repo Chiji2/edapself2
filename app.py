@@ -9,7 +9,7 @@ if st.button("Check this"):
   coefficients = np.polyfit(x, y, 1)
   trendline = np.poly1d(coefficients)
   plt.plot(x,y)
-  plt.plot(x,trend_line(x))
+  plt.plot(x,trend_line(x), label="Trend Line", color="red", linewidth=2)
   plt.xlabel("Time steps")
   plt.ylabel("Values")
   plt.title("Random walk with trend line")
